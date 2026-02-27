@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mongolia - Cesium Globe</title>
+  <script src="https://cesium.com/downloads/cesiumjs/releases/1.114/Build/Cesium/Cesium.js"></script>
+  <link href="https://cesium.com/downloads/cesiumjs/releases/1.114/Build/Cesium/Widgets/widgets.css" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html, body { width: 100%; height: 100%; overflow: hidden; font-family: sans-serif; }
+    #cesiumContainer { width: 100%; height: 100%; }
+    #info {
+      position: absolute;
+      top: 16px;
+      left: 16px;
+      background: rgba(0, 0, 0, 0.6);
+      color: #fff;
+      padding: 12px 18px;
+      border-radius: 8px;
+      pointer-events: none;
+      z-index: 10;
+    }
+    #info h1 { font-size: 1.3rem; margin-bottom: 4px; }
+    #info p  { font-size: 0.85rem; color: #ccc; }
+  </style>
+</head>
+<body>
+  <div id="cesiumContainer"></div>
+  <div id="info">
+    <h1>🇲🇳 モンゴル</h1>
+    <p>Mongolia — Central Asia</p>
+  </div>
+
+  <script>
+    // Cesium Ion トークンが不要な場合は空文字でも動作します
+    Cesium.Ion.defaultAccessToken = "";
+
+    const viewer = new Cesium.Viewer("cesiumContainer", {
+      terrainProvider: new Cesium.EllipsoidTerrainProvider(),
+      baseLayerPicker: false,
+      geocoder: false,
+      homeButton: false,
+      sceneModePicker: true,
+      navigationHelpButton: false,
+      animation: false,
+      timeline: false,
+      fullscreenButton: true,
+      baseLayer: false,
+    });
+
+    viewer.imageryLayers.addImageryProvider(
+      new Cesium.UrlTemplateImageryProvider({
+        url: "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+        credit: "© OpenStreetMap contributors",
+        maximumLevel: 19,
+      })
+    );
+
+    // モンゴルの首都ウランバートル (47.9077°N, 106.8832°E)
+    const ulaanbaatar = Cesium.Cartesian3.fromDegrees(106.8832, 47.9077);
+
+    // モンゴルの主要都市にマーカーを追加
+    const cities = [
+      { name: "ウランバートル (Ulaanbaatar)", lon: 106.8832, lat: 47.9077, capital: true },
+      { name: "エルデネト (Erdenet)",         lon: 104.0737, lat: 49.0272, capital: false },
+      { name: "ダルハン (Darkhan)",           lon: 105.9500, lat: 49.4833, capital: false },
+      { name: "チョイバルサン (Choibalsan)",   lon: 114.5358, lat: 48.0695, capital: false },
+      { name: "ムルン (Mörön)",               lon: 100.1597, lat: 49.6378, capital: false },
+    ];
+
+    cities.forEach(({ name, lon, lat, capital }) => {
+      viewer.entities.add({
+        position: Cesium.Cartesian3.fromDegrees(lon, lat),
+        point: {
+          pixelSize: capital ? 14 : 9,
+          color: capital ? Cesium.Color.GOLD : Cesium.Color.CYAN,
+          outlineColor: Cesium.Color.WHITE,
+          outlineWidth: 2,
+        },
+        label: {
+          text: name,
+          font: "13px sans-serif",
+          fillColor: Cesium.Color.WHITE,
+          outlineColor: Cesium.Color.BLACK,
+          outlineWidth: 2,
+          style: Cesium.LabelStyle.FILL_AND_OUTLINE,
+          pixelOffset: new Cesium.Cartesian2(0, -22),
+          distanceDisplayCondition: new Cesium.DistanceDisplayCondition(0, 3000000),
+        },
+      });
+    });
+
+    // モンゴル国境ポリゴン（簡略化した輪郭）
+    viewer.entities.add({
+      name: "Mongolia border",
+      polygon: {
+        hierarchy: Cesium.Cartesian3.fromDegreesArray([
+          87.75, 49.17,  89.59, 49.90,  91.86, 50.01,  94.62, 50.32,
+          97.97, 49.56, 102.06, 51.36, 104.79, 50.60, 106.83, 50.34,
+          109.51, 49.29, 113.12, 49.58, 114.94, 47.68, 117.83, 47.99,
+          119.14, 47.66, 119.72, 46.69, 118.87, 45.79, 115.61, 44.90,
+          114.00, 44.08, 111.41, 43.66, 108.47, 42.45, 106.77, 42.16,
+          104.52, 41.67, 101.84, 41.38,  99.98, 42.67,  97.20, 42.80,
+           95.40, 43.27,  92.48, 45.10,  90.77, 45.20,  90.27, 46.95,
+           88.56, 48.45,  87.75, 49.17,
+        ]),
+        material: Cesium.Color.YELLOW.withAlpha(0.12),
+        outline: true,
+        outlineColor: Cesium.Color.YELLOW.withAlpha(0.8),
+        outlineWidth: 2,
+        height: 0,
+      },
+    });
+
+    // カメラをモンゴル中心に設定（初期位置を即時セット → flyTo）
+    viewer.camera.setView({
+      destination: Cesium.Cartesian3.fromDegrees(103.85, 46.86, 3800000),
+      orientation: {
+        heading: Cesium.Math.toRadians(0),
+        pitch:   Cesium.Math.toRadians(-90),
+        roll: 0,
+      },
+    });
+  </script>
+</body>
+</html>
