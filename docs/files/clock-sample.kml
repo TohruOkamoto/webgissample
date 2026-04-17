@@ -1,0 +1,216 @@
+<?xml version='1.0' encoding='utf-8'?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+    <Document>
+        <Folder>
+            <Placemark id="Баруун дугана(АРБГ 057)">
+                <name>Баруун дугана(АРБГ 057)</name>
+                <TimeSpan>
+                    <begin>2000</begin>
+                    <end>2002</end>
+                </TimeSpan>
+                <description>Aimag情報 ID:57, name :Баруун дугана(АРБГ 057), language:mn</description>
+                <Point>
+                    <coordinates>101.42925,49.31366666666667,0.0</coordinates>
+                </Point>
+                <LookAt>
+                    <longitude>101.42925</longitude>
+                    <latitude>49.31366666666667</latitude>
+                    <altitude>0</altitude>
+                    <heading>0</heading>
+                    <tilt>0</tilt>
+                    <range>0</range>
+                </LookAt>
+            </Placemark>
+            <Placemark id="Баруун дугана(АРБГ 057)_2">
+                <name>Баруун дугана(АРБГ 057)</name>
+                <TimeSpan>
+                    <begin>2004</begin>
+                    <end>2006</end>
+                </TimeSpan>
+                <description>Aimag情報 ID:57, name :Баруун дугана(АРБГ 057), language:mn</description>
+                <Point>
+                    <coordinates>101.42925,49.31366666666667,0.0</coordinates>
+                </Point>
+                <LookAt>
+                    <longitude>101.42925</longitude>
+                    <latitude>49.31366666666667</latitude>
+                    <altitude>0</altitude>
+                    <heading>0</heading>
+                    <tilt>0</tilt>
+                    <range>0</range>
+                </LookAt>
+            </Placemark>
+            <Placemark id="Авзагын хүрээ(БУХӨ 056)">
+                <name>Авзагын хүрээ(БУХӨ 056)</name>
+                <TimeSpan>
+                    <begin>2002</begin>
+                    <end>2004</end>
+                </TimeSpan>
+                <description>Aimag情報 ID:194, name :Авзагын хүрээ(БУХӨ 056), language:mn</description>
+                <Point>
+                    <coordinates>103.40568333333333,48.300916666666666,0.0</coordinates>
+                </Point>
+                <LookAt>
+                    <longitude>103.40568333333333</longitude>
+                    <latitude>48.300916666666666</latitude>
+                    <altitude>0</altitude>
+                    <heading>0</heading>
+                    <tilt>0</tilt>
+                    <range>0</range>
+                </LookAt>
+            </Placemark>
+            <Placemark id="Данжигийн хурал(БХБН 074)">
+                <name>Данжигийн хурал(БХБН 074)</name>
+                <TimeSpan>
+                    <begin>2004</begin>
+                    <end>2006</end>
+                </TimeSpan>
+                <description>Aimag情報 ID:205, name :Данжигийн хурал(БХБН 074), language:mn</description>
+                <Point>
+                    <coordinates>99.09938333333334,46.32641666666667,0.0</coordinates>
+                </Point>
+                <LookAt>
+                    <longitude>99.09938333333334</longitude>
+                    <latitude>46.32641666666667</latitude>
+                    <altitude>0</altitude>
+                    <heading>0</heading>
+                    <tilt>0</tilt>
+                    <range>0</range>
+                </LookAt>
+            </Placemark>
+            <Placemark id="Билүүтийн хүрээ(БХГБ 085)">
+                <name>Билүүтийн хүрээ(БХГБ 085)</name>
+                <TimeSpan>
+                    <begin>2006</begin>
+                    <end>2008</end>
+                </TimeSpan>
+                <description>Aimag情報 ID:215, name :Билүүтийн хүрээ(БХГБ 085), language:mn</description>
+                <Point>
+                    <coordinates>98.29503333333334,47.071,0.0</coordinates>
+                </Point>
+                <LookAt>
+                    <longitude>98.29503333333334</longitude>
+                    <latitude>47.071</latitude>
+                    <altitude>0</altitude>
+                    <heading>0</heading>
+                    <tilt>0</tilt>
+                    <range>0</range>
+                </LookAt>
+            </Placemark>
+            <Placemark id="Алагийн хүрээ(БӨАЦ 077)">
+                <name>Алагийн хүрээ(БӨАЦ 077)</name>
+                <TimeSpan>
+                    <begin>2008</begin>
+                    <end>2010</end>
+                </TimeSpan>
+                <description>Aimag情報 ID:225, name :Алагийн хүрээ(БӨАЦ 077), language:mn</description>
+                <Point>
+                    <coordinates>90.42648333333334,49.0715,0.0</coordinates>
+                </Point>
+                <LookAt>
+                    <longitude>90.42648333333334</longitude>
+                    <latitude>49.0715</latitude>
+                    <altitude>0</altitude>
+                    <heading>0</heading>
+                    <tilt>0</tilt>
+                    <range>0</range>
+                </LookAt>
+            </Placemark>
+            <Placemark id="Бигэр номун хааны хүрээ(ГАБГ 096)">
+                <name>Бигэр номун хааны хүрээ(ГАБГ 096)</name>
+                <TimeSpan>
+                    <begin>2010</begin>
+                    <end>2012</end>
+                </TimeSpan>
+                <description>Aimag情報 ID:235, name :Бигэр номун хааны хүрээ(ГАБГ 096), language:mn</description>
+                <Point>
+                    <coordinates>97.00885,45.80603333333333,0.0</coordinates>
+                </Point>
+                <LookAt>
+                    <longitude>97.00885</longitude>
+                    <latitude>45.80603333333333</latitude>
+                    <altitude>0</altitude>
+                    <heading>0</heading>
+                    <tilt>0</tilt>
+                    <range>0</range>
+                </LookAt>
+            </Placemark>
+            <Placemark id="Зүйлийн хүрээ(ГАТХ 108)">
+                <name>Зүйлийн хүрээ(ГАТХ 108)</name>
+                <description>Aimag情報 ID:245, name :Зүйлийн хүрээ(ГАТХ 108), language:mn</description>
+                <TimeSpan>
+                    <begin>2012</begin>
+                    <end>2014</end>
+                </TimeSpan>
+                <Point>
+                    <coordinates>93.90088333333334,46.30935,0.0</coordinates>
+                </Point>
+                <LookAt>
+                    <longitude>93.90088333333334</longitude>
+                    <latitude>46.30935</latitude>
+                    <altitude>0</altitude>
+                    <heading>0</heading>
+                    <tilt>0</tilt>
+                    <range>0</range>
+                </LookAt>
+            </Placemark>
+            <Placemark id="Алаг өндрийн хүрээ(ГАШР 106)">
+                <name>Алаг өндрийн хүрээ(ГАШР 106)</name>
+                <description>Aimag情報 ID:255, name :Алаг өндрийн хүрээ(ГАШР 106), language:mn</description>
+                <TimeSpan>
+                    <begin>2014</begin>
+                    <end>2016</end>
+                </TimeSpan>
+                <Point>
+                    <coordinates>94.9263,45.7714,0.0</coordinates>
+                </Point>
+                <LookAt>
+                    <longitude>94.9263</longitude>
+                    <latitude>45.7714</latitude>
+                    <altitude>0</altitude>
+                    <heading>0</heading>
+                    <tilt>0</tilt>
+                    <range>0</range>
+                </LookAt>
+            </Placemark>
+            <Placemark id="Зөөхэйн хурал(ТӨЖР 033)">
+                <name>Зөөхэйн хурал(ТӨЖР 033)</name>
+                <description>Aimag情報 ID:676, name :Зөөхэйн хурал(ТӨЖР 033), language:mn</description>
+                <TimeSpan>
+                    <begin>2016</begin>
+                    <end>2018</end>
+                </TimeSpan>
+                <Point>
+                    <coordinates>105.56195,48.724183333333336,0.0</coordinates>
+                </Point>
+                <LookAt>
+                    <longitude>105.56195</longitude>
+                    <latitude>48.724183333333336</latitude>
+                    <altitude>0</altitude>
+                    <heading>0</heading>
+                    <tilt>0</tilt>
+                    <range>0</range>
+                </LookAt>
+            </Placemark>
+            <Placemark id="Өргөн намгийн хурал(ТӨЛҮ 018)">
+                <name>Өргөн намгийн хурал(ТӨЛҮ 018)</name>
+                <description>Aimag情報 ID:686, name :Өргөн намгийн хурал(ТӨЛҮ 018), language:mn</description>
+                <TimeSpan>
+                    <begin>2018</begin>
+                    <end>2020</end>
+                </TimeSpan>
+                <Point>
+                    <coordinates>105.07678333333334,48.65535,0.0</coordinates>
+                </Point>
+                <LookAt>
+                    <longitude>105.07678333333334</longitude>
+                    <latitude>48.65535</latitude>
+                    <altitude>0</altitude>
+                    <heading>0</heading>
+                    <tilt>0</tilt>
+                    <range>0</range>
+                </LookAt>
+            </Placemark>
+        </Folder>
+    </Document>
+</kml>
